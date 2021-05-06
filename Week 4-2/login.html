@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--This is the login HTML page
+    By Richard Martin
+    richardmartin332@gmail.com
+for CSC102 SP2021 week 3-1-->
+<link href="UATstyle.css" rel="stylesheet" type="text/css" />
+<!-- Giving the login page the same look as the web page-->
+
+<head>
+    <script src="loginCode.js"></script> <!-- New name of the login prior to the UATSpace Page-->
+    <meta charset="UTF-8"> <!-- extra specifications accessed from the initial ! enter auto fill-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- "same"-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- "same"-->
+    <title>UATSpace login</title> <!-- new title for login page-->
+</head>
+
+<body>
+    <h1>
+        Welcome to UATSpace login page
+        <!-- Intro text with approptiate size-->
+    </h1>
+    <p id="loginStatus">
+        <!--Creating the Id for login status.-->
+        Status of login...
+        <!-- intro text for user to understand required input -->
+    </p>
+    <br>
+    <form id="creditSubmit" onsubmit="return false">
+        <!-- creating layout for login information-->
+        First Name: <input type="text" id="fName" /><br> <!-- box for inputing first name and relating functions-->
+        Last Name: <input type="text" id="lName" /><br> <!-- box for inputing last name and relating functions-->
+        Badge Number <input type="number" id="badgeID" /><br>
+        <!-- box for inputing badge number and relating functions-->
+        <input type="submit" onclick="checkCreds();" /> <!-- giving the submit button a function-->
+    </form>
+
+</body>
+
+</html>

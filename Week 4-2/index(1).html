@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--file creator: Richard Martin
+email:ricmart1@uat.edu
+for csc102 class sp2021online3-->
+
+<!-- Casino Assignment
+Title: Faster Than Light Casino
+Scene: The ceiling is a lazer light display of lightspeed travel. Patrons are scattered 
+all across the red with gold trimed tables. The floor is alive with with lights changing colors 
+when they are stepped on. The space port is filled with cruisers from all across the galaxy,
+as this is the number one high stakes casino in all of the milky way galaxy. Feeling lucky
+you step up to try your luck as a high roller. The Craps tables are waiting...-->
+<html lang="en">
+
+<link href="UATstyle.css" rel="stylesheet" type="text/css" /> <!--we are linking style sheets-->
+<script src="code.js"></script> <!--this is to link our hard codeing to the UI page-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> UAT Space Stuff Martin </title>
+</head>
+
+
+
+<body>
+<table> <!--using this to get the image and text on the same line-->
+    <td><img src="UATspaceLogo-2.jpg"></td> <!--inside-->
+    <td><h1>UAT Space Program</h1></td>
+</table>
+
+<table border="2"id="data" width="70%" bordercolor= "darkgoldenrod" class="mainTable"> <!-- Styling for main table boarder--> 
+    <col style="width: 35%;"> <!-- setting two columbs to take up 70% of screen and be equal-->
+    <col style="width: 35%;">
+    <thead>
+    <tr style="font-family: fantasy;"> <!--setting font for tables heading-->
+        <th align="left">Data Type</th><!--Making text left justified-->
+        <th align="left">Reading</th><!--left justified on both columbs-->
+    </tr>
+    </thead>
+    <tbody><!--creating main table body and data-->
+        <tr id="seconds"><td>Time Elapsed:</td><td>15</td></tr><!--inputting set example data-->
+        <tr id="latitude"><td>Latitude:</td><td>0</td></tr><!--inputting set example data-->
+        <tr id="longitude"><td>Longitude:</td><td>0</td></tr><!--inputting set example data-->
+        <tr id="gps_altitude"><td>GPS Altitude:</td><td>0</td></tr><!--inputting set example data-->
+        <tr id="bmpSensor_altitude"><td>BMP Sensor Altitude:</td><td>30383.4</td></tr><!--inputting set example data-->
+        <tr id="bmpSensor_preassure"><td>BMP Sensor Preassure:</td><td>2.34</td></tr><!--inputting set example data-->
+        <tr id="bmpSensor_temp"><td>BMP Sensor Temperature:</td><td>0</td></tr><!--inputting set example data-->
+        <tr id="digitalSensor_temp"><td>Digital Sensor Temperature:</td><td>24.12</td></tr><!--inputting set example data-->
+        <tr id="cssSensor_temp"><td>CSS Sensor Temperature:</td><td>25</td></tr><!--inputting set example data-->
+        <tr id="cssSensor_eCO2"><td>CSS Sensor eCO2:</td><td>400</td></tr><!--inputting set example data-->
+        <tr id="cssSensor_TVOC"><td>CSS Sensor TVOC:</td><td>0</td></tr><!--inputting set example data-->
+        <tr id="UV"><td>UV:</td><td>0</td></tr><!--inputting set example data-->
+        <tr id="accelX"><td>Accel X:</td><td>-0.87</td></tr><!--inputting set example data-->
+        <tr id="accely"><td>Accel Y:</td><td>-0.02</td></tr><!--inputting set example data-->
+        <tr id="accelZ"><td>Accel Z:</td><td>9.61</td></tr><!--inputting set example data-->
+        <tr id="magneticX"><td>Magnetic X:</td><td>0.13</td></tr><!--inputting set example data-->
+        <tr id="magneticY"><td>Magnetic Y:</td><td>0.57</td></tr><!--inputting set example data-->
+        <tr id="magneticZ"><td>Magnetic Z:</td><td>-0.24</td></tr><!--inputting set example data-->
+        <tr id="gyroX"><td>Gryo X:</td><td>4.66</td></tr><!--inputting set example data-->
+        <tr id="gyroY"><td>Gryo Y:</td><td>0.01</td></tr><!--inputting set example data-->
+        <tr id="gyroZ"><td>Gryo Z:</td><td>-0.4</td></tr><!--inputting set example data-->
+    </tbody>
+</table>
+
+<br>
+<br>
+<button class="button" id="startButton" onclick="start();">Start</button><!--start button-->
+<button id="stopButton" onclick="stop();" class="button">Stop</button><!--stop button-->
+<br>
+<button class="button" onclick="playStation();">Play Sound</button><br><!-- button to play sound clip-->
+
+
+<br>
+<br>
+
+    <p id="countDownTimer")>Starting countdown here... </p>
+
+    <button class="button"id="startButton" onclick="start();"> Start </button>
+    <button id="stopButton" onclick="stop();" class="button">Stop </button>
+<!--This secction is all about what will get displayed from the Craps game on the space casino-->
+    <br>
+    <br>
+    <h3 id="crapsResults">Results of the Craps Round </h3> <!--almost self explanitory. the results of craps h3 for good size-->
+    <br> 
+    Die1 is: <div id="die1Res">needs to be rolled</div><br> <!-- just stating that the dice have yet to role yet-->
+    Die2 is: <div id="die2Res">needs to be rolled</div><br> <!-- Each dice gets a display. Brings attention that they exist-->
+    Sum of Die1 + Die2 is: <div id="sumRes">needs to be rolled</div> <!-- where the combined totall will be displayed-->
+    <br>
+    <button class="lgButton" onclick="playCraps();">Play Craps Here!</button> <!-- new button class made for larger sized buttons-->
+<br>
+<br>
+<br>
+<div id="sandboxDisplay">Sandbox Display</div>
+<br>
+<button class="sandButton" onclick="runSandbox();"> Try It! </button>
+
+
+
+</body>
+
+</html>
